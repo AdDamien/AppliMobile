@@ -3,21 +3,35 @@ import theme from "../../theme";
 export default function createStyles() {
     const colors = theme();
     const styles = StyleSheet.create({
+        root : {
+            backgroundColor:colors.blue,
+        },
         container: {
             flex: 1,
-            justifyContent: 'center',
-            alignItems: 'center',
-            backgroundColor: '#f0f0f0',
+            padding: 10,
+            backgroundColor: colors.blue,
         },
-        title: {
-            fontSize: 24,
+        header: {
+            fontSize: 20,
             fontWeight: 'bold',
             marginBottom: 20,
+            color : "darkblue",
         },
-        subtitle: {
-            fontSize: 18,
-            color: '#888',
+        columnContainer: {
+            flexDirection: 'row',
+            justifyContent: 'space-between',
         },
+        column: {
+            flex: 1,
+            marginRight: 15,
+        },
+        label: {
+            fontSize: 16,
+            fontWeight: 'bold',
+            marginTop: 50,
+            color: "darkblue",
+        },
+   
     });
     return styles;
 }

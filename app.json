@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "AppliMobile",
-    "slug": "AppliMobile",
+    "name": "ProjetHorseGenetic",
+    "slug": "ProjetHorseGenetic",
     "version": "1.0.0",
     "orientation": "automatic",
     "icon": "./assets/icon.png",

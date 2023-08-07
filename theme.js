@@ -8,7 +8,7 @@ export const colors = {
     warn: "#A7373F",
     white: "#fff",
     black: "#000",
-    blue: "cyan"
+    blue: "lightskyblue"
 }
 
 

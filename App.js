@@ -70,7 +70,7 @@ export default function App() {
 
     const StackDemande = () => {
       return (
-        <Stack.Navigator>
+        <Stack.Navigator >
           <Stack.Screen
             name="Accueil"
             component={Accueil}

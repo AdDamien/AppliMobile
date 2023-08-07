@@ -11,9 +11,6 @@ import DateTimePickerModal from "react-native-modal-datetime-picker";
 import { Controller, useForm } from "react-hook-form";
 
 
-
-
-
 export default () => {
     const styles = { ...AppStyles(), ...FormulaireDemandeStyles() };
     
@@ -27,7 +24,7 @@ export default () => {
 
     const [date, setDate] = useState(new Date());
     const [isDatePickerVisible, setDatePickerVisibility] = useState(false);
-    const [quantity, setQuantite] = useState("faible");
+    const [severity, setSeverity] = useState("faible");
     const [asap, setAsap] = useState(false);
 
     const onFormulaireValide = (dataController) => {

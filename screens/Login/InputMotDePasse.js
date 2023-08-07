@@ -14,6 +14,7 @@ export default InputMotDePasse = ({ control, errors }) => {
         hasLowercase: false,
         hasUppercase: false,
         hasNumeric: false,
+        hasSpecial: false,
     });
 
     const Rule = ({ text, valid }) => {
@@ -37,7 +38,7 @@ export default InputMotDePasse = ({ control, errors }) => {
             render={({ field: { onChange, onBlur, value } }) => (
                 <>
                     <Input
-                        label="Mot de passe"
+                        label="Password"
                         style={styles.input}
                         onBlur={onBlur}
                         secureTextEntry={true}
@@ -54,23 +55,23 @@ export default InputMotDePasse = ({ control, errors }) => {
                         value={value}
                     />
                     <Rule
-                        text="Longueur minimale de 6"
+                        text="Need at least 6 Characters"
                         valid={passwordValidity.minLength}
                     ></Rule>
                     <Rule
-                        text="Au moins une lettre minuscule"
+                        text="Need at least one Lowercase"
                         valid={passwordValidity.hasLowercase}
                     ></Rule>
                     <Rule
-                        text="Au moins une lettre majuscule"
+                        text="Need at least one Uppercase"
                         valid={passwordValidity.hasUppercase}
                     ></Rule>
                     <Rule
-                        text="Au moins un caractère numerique"
+                        text="Need at least one number"
                         valid={passwordValidity.hasNumeric}
                     ></Rule>
                     <Rule
-                        text="Au moins un caractère spécial"
+                        text="Need at least one special (example : ! + - $ * )"
                         valid={passwordValidity.hasSpecial}
                     ></Rule>
                 </>

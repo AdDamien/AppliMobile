@@ -18,7 +18,7 @@ export default ({ navigation }) => {
     ];
 
     const onAjoutDemande = () => {
-        navigation.navigate("FormulaireDemande");
+        navigation.navigate("FormulaireMateriel");
     };
 
     return (
